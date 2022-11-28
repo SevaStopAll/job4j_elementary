@@ -1,6 +1,6 @@
 package ru.job4j;
 
-public class Multiplie {
+public class Multiple {
     public static void main(String[] args) {
         System.out.println("1 * 1  = 1");
         System.out.println("1 * 2 = 2");
