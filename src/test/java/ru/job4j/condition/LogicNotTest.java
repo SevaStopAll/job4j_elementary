@@ -6,51 +6,45 @@ import static org.assertj.core.api.Assertions.*;
 class LogicNotTest {
 
     @Test
-    public void whenIsEven2thenTrue() {
+    public void whenIsEven() {
         int num = 2;
         boolean result = LogicNot.isEven(num);
-        boolean expected = true;
-        assertThat(result).isEqualTo(expected);
+        assertThat(result).isTrue();
 
     }
 
     @Test
-    public void whenIsPositiveMinus2thenFalse() {
+    public void whenIsPositiveMinus2() {
         int num = -2;
         boolean result = LogicNot.isPositive(num);
-        boolean expected = false;
-        assertThat(result).isEqualTo(expected);
+        assertThat(result).isFalse();
     }
 
     @Test
-    void whenNotEven5thenTrue() {
+    void whenNotEven() {
         int num = 5;
         boolean result = LogicNot.notEven(num);
-        boolean expected = true;
-        assertThat(result).isEqualTo(expected);
+        assertThat(result).isTrue();
     }
 
     @Test
-    void whenNotPositive7thenFalse() {
+    void whenNotPositive7() {
         int num = 7;
         boolean result = LogicNot.notPositive(num);
-        boolean expected = false;
-        assertThat(result).isEqualTo(expected);
+        assertThat(result).isFalse();
     }
 
     @Test
-    void whenNotEvenAndPositive4thenFalse() {
+    void whenNotEvenAndPositive4() {
         int num = 4;
         boolean result = LogicNot.notEvenAndPositive(num);
-        boolean expected = false;
-        assertThat(result).isEqualTo(expected);
+        assertThat(result).isFalse();
     }
 
     @Test
-    void whenEvenOrNotPositive5thenFalse() {
+    void whenEvenOrNotPositive5() {
         int num = 5;
         boolean result = LogicNot.evenOrNotPositive(num);
-        boolean expected = false;
-        assertThat(result).isEqualTo(expected);
+        assertThat(result).isFalse();
     }
 }
