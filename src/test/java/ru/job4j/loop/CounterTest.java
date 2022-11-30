@@ -22,4 +22,13 @@ public class CounterTest {
         int expected = 18;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenSumNumbersFromOnetoTenThenFiftyFive() {
+        int start = 1;
+        int finish = 10;
+        int result = Counter.sum(start, finish);
+        int expected = 55;
+        assertThat(result).isEqualTo(expected);
+    }
 }
