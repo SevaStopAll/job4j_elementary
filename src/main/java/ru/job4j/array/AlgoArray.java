@@ -13,8 +13,8 @@ public class AlgoArray {
         array[4] = array[3];
         array[3] = temp;
 
-        for (int i: array) {
-            System.out.println(i);
+        for (int number: array) {
+            System.out.println(number);
         }
     }
 }
