@@ -3,9 +3,8 @@ package ru.job4j.array;
 public class Check {
     public static boolean mono(boolean[] data) {
         boolean result = true;
-        boolean model = data[0];
-        for (boolean goal: data) {
-            if (goal != model) {
+        for (int index = 1; index < data.length; index++) {
+            if (data[index] != data[0]) {
                 result = false;
                 break;
             }
